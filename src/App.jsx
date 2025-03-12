@@ -12,12 +12,12 @@ const words = [
   { text: "Assaboriment", category: "Degustació" },
   { text: "Cafè", category: "doble" },
   { text: "Pas", category: "doble" },
-  { text: "re-", category: "doble" },
+  { text: "Agent", category: "doble" },
   { text: "capa", category: "doble" },
-  { text: "avinentesa", category: "Instruments" },
-  { text: "ocasió", category: "Instruments" },
-  { text: "oportunitat", category: "Instruments" },
-  { text: "tanda", category: "Instruments" }
+  { text: "avinentesa", category: "Saó" },
+  { text: "ocasió", category: "Saó" },
+  { text: "oportunitat", category: "Saó" },
+  { text: "tanda", category: "Saó" }
 ];
 
 const shuffleArray = (array) => {
