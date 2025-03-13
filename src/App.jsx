@@ -48,7 +48,8 @@ const ConnectionsGame = () => {
 
   return (
     <div className="container">
-      <h1 className="title">Connections</h1>
+      <h1 className="title">Connexions</h1>
+      <h4>Seràs capaç de trobar el teu regal?</h4>
       <div className="grid">
         {shuffledWords.map((word) => (
           <div
@@ -67,7 +68,7 @@ const ConnectionsGame = () => {
         Submit
       </button>
       <div className="categories">
-        <h2>Found Categories</h2>
+        <h2>Trobat:</h2>
         <ul className="category-list">
           {foundCategories.map((cat, index) => (
             <li key={index}>{cat}</li>
