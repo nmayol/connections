@@ -4,7 +4,7 @@ import './App.css';
 const words = [
   { text: "Conservatori", category: "al Liceu" },
   { text: "Bomba", category: "al Liceu" },
-  { text: "Opera", category: "al Liceu" },
+  { text: "Òpera", category: "al Liceu" },
   { text: "Incendi", category: "al Liceu" },
   { text: "La Rosalia", category: "el 25 de setembre" },
   { text: "Will Smith", category: "el 25 de setembre"},
