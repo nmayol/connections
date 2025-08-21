@@ -17,7 +17,7 @@ const words = [
   { text: "Viva", category: "Astuta" },
   { text: "Sagaç", category: "Astuta" },
   { text: "Espavilada", category: "Astuta" },
-  { text: "Desacomplexada", category: "Astuta" }
+  { text: "Desacom- plexada", category: "Astuta" }
 ];
 
 const shuffleArray = (array) => {
