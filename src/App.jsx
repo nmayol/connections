@@ -88,9 +88,10 @@ const ConnectionsGame = () => {
       {gameComplete && (
         <div className="modal-overlay">
           <div className="modal">
-            <h2>🎉 Val per dos entrades a l'òpera: La Guineueta Astuta (Leoš Janáček)</h2>
-            <h3>al Liceu. 25 de setembre a les 19:30h</h3>
-            <p>Per molts anys papa!!!</p>
+            <h2>🎉 Val per dos entrades a l'òpera:</h2>
+            <h2>La Guineueta Astuta (Leoš Janáček)</h2>
+            <h3>📍Gran Teatre del Liceu </h3>
+            <h3>⏱️25 de setembre, 19:30h</h3>
             <img src="20240821_130506.jpg" alt="Regal" />
           </div>
         </div>
