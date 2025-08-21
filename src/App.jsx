@@ -96,8 +96,8 @@ const ConnectionsGame = () => {
             <h2>🎉 Val per dos entrades:</h2>
             <h2>La Guineueta Astuta,</h2>
             <h2>de Leoš Janáček</h2>
-            <h3>📍Gran Teatre del Liceu </h3>
-            <h3>⏱️25 de setembre, 19:30h</h3>
+            <h3>📍 Gran Teatre del Liceu </h3>
+            <h3>⏱️ 25 de setembre, 19:30h</h3>
             <img src="20240821_130506.jpg" alt="Regal" />
           </div>
         </div>
