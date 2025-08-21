@@ -51,6 +51,10 @@ const ConnectionsGame = () => {
     }
   };
 
+  const closeModal = () => {
+    setGameComplete(false);
+  };
+
   return (
     <div className="container">
       <h1 className="title">Connexions</h1>
@@ -88,6 +92,7 @@ const ConnectionsGame = () => {
       {gameComplete && (
         <div className="modal-overlay">
           <div className="modal">
+            <button className="close-button" onClick={closeModal}>✖</button>
             <h2>🎉 Val per dos entrades:</h2>
             <h2>La Guineueta Astuta,</h2>
             <h2>de Leoš Janáček</h2>
