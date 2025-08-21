@@ -28,6 +28,7 @@ const ConnectionsGame = () => {
   const [shuffledWords, setShuffledWords] = useState(shuffleArray(words));
   const [selectedWords, setSelectedWords] = useState([]);
   const [foundCategories, setFoundCategories] = useState([]);
+  const [gameComplete, setGameComplete] = useState(false);
 
   const handleSelect = (word) => {
     setSelectedWords((prev) =>
@@ -39,8 +40,12 @@ const ConnectionsGame = () => {
     if (selectedWords.length === 4) {
       const category = selectedWords[0].category;
       if (selectedWords.every((word) => word.category === category)) {
-        setFoundCategories((prev) => [...prev, category]);
+        const newFound = [...foundCategories, category];
+        setFoundCategories(newFound);
         setShuffledWords((prev) => prev.filter((word) => !selectedWords.includes(word)));
+        if (newFound.length === 4) {
+          setGameComplete(true);
+        }
       }
       setSelectedWords([]);
     }
@@ -50,6 +55,7 @@ const ConnectionsGame = () => {
     <div className="container">
       <h1 className="title">Connexions</h1>
       <h4>Seràs capaç de trobar el teu regal?</h4>
+
       <div className="grid">
         {shuffledWords.map((word) => (
           <div
@@ -61,12 +67,14 @@ const ConnectionsGame = () => {
           </div>
         ))}
       </div>
+
       <button
         onClick={checkSelection}
         className="submit-button"
       >
         Submit
       </button>
+
       <div className="categories">
         <h2>Trobat:</h2>
         <ul className="category-list">
@@ -75,6 +83,17 @@ const ConnectionsGame = () => {
           ))}
         </ul>
       </div>
+
+      {/* Modal */}
+      {gameComplete && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <h2>🎉 Felicitats! Has trobat totes les connexions!</h2>
+            <p>Aquí tens el teu regal 🎁</p>
+            <img src="https://via.placeholder.com/300x200" alt="Regal" />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
