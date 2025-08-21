@@ -2,22 +2,22 @@ import React, { useState } from "react";
 import './App.css';
 
 const words = [
-  { text: "Del dia", category: "Menú" },
-  { text: "Repertori", category: "Menú" },
-  { text: "Llista", category: "Menú" },
-  { text: "Carta", category: "Menú" },
-  { text: "Tast", category: "Degustació" },
-  { text: "Deleïtament", category: "Degustació" },
-  { text: "Delectació", category: "Degustació" },
-  { text: "Assaboriment", category: "Degustació" },
-  { text: "Cafè", category: "Doble" },
-  { text: "Pas", category: "Doble" },
-  { text: "Agent", category: "Doble" },
-  { text: "capa", category: "Doble" },
-  { text: "avinentesa", category: "Saó" },
-  { text: "ocasió", category: "Saó" },
-  { text: "oportunitat", category: "Saó" },
-  { text: "tanda", category: "Saó" }
+  { text: "Conservatori", category: "al Liceu" },
+  { text: "Bomba", category: "al Liceu" },
+  { text: "Opera", category: "al Liceu" },
+  { text: "Incendi", category: "al Liceu" },
+  { text: "La Rosalia", category: "el 25 de setembre" },
+  { text: "Will Smith", category: "el 25 de setembre"},
+  { text: "Pedro Almodovar", category: "el 25 de setembre" },
+  { text: "Adolfo Suarez", category: "el 25 de setembre" },
+  { text: "Ca n'Ensenya", category: "La Guineueta" },
+  { text: "Llucmajor", category: "La Guineueta" },
+  { text: "Valldaura", category: "La Guineueta" },
+  { text: "Karl Marx", category: "La Guineueta" },
+  { text: "Viva", category: "Astuta" },
+  { text: "Sagaç", category: "Astuta" },
+  { text: "Espavilada", category: "Astuta" },
+  { text: "Desacomplexada", category: "Astuta" }
 ];
 
 const shuffleArray = (array) => {
