@@ -227,7 +227,7 @@ ul.no-bullets {
   cursor: pointer;
   color: #555;
   transition: color 0.2s ease;
-  margin: 15%;
+  margin: -5%;
 }
 
 .close-button:hover {
